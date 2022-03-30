@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background-color: #F2F3F8;
-    height: 100vh;
+    min-height: 100vh;
 `;
 
 export const Header = styled.div`
@@ -12,6 +12,7 @@ export const Header = styled.div`
     margin: auto;
     display: flex;
     align-items: center;
+    padding: 0 20px ;
 
     img{
         width: 40px;
@@ -30,6 +31,7 @@ export const Body = styled.div`
     margin: auto;
     max-width: 980px;
     margin-bottom: 50px;
+    padding: 20px;
 `;
 
 

@@ -9,7 +9,6 @@ type Props = {
 export const TableArea = ({ list }: Props) => {
     return (
         <C.Table>
-
             <tbody>
                 {list.map((item, index) => (
                     <TableItem key={index} item={item} />

@@ -78,6 +78,7 @@ const App = () => {
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />
       </C.Body>
+      
       {/* Área de informações*/}
       <InfoArea income={income} expense={expense} />
 

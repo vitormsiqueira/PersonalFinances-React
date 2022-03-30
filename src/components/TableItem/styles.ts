@@ -1,4 +1,13 @@
 import styled from 'styled-components';
+import { FiGift, FiDollarSign } from 'react-icons/fi';
+import {StyledIcon} from 'styled-icons/types';
+import {StyledIconBase} from '@styled-icons/styled-icon'
+
+export const IconStyleWrapper = styled.div`
+  ${StyledIconBase} {
+    stroke-width: 2;
+  }
+`
 
 
 
@@ -8,11 +17,11 @@ export const Container = styled.div`
     background-color: #fff;
     padding: 10px;
     margin: 20px 0px;
-    flex: 1;
+    // flex: 1;
 `;
 
 export const TableLine = styled.tr`
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
 `;
 
@@ -21,13 +30,18 @@ export const TableColumn = styled.td`
 `;
 
 export const Category = styled.div<{ color: string }>`
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 14px;
     color: #fff;
     background-color: ${props => props.color};
+    width: 30px;
+    height: 30px;
 `;
 
+export const Icon = styled.div<{ color: string , icon: StyledIcon}>`
+    content: StyledIcon;
+`;
 
 export const Bills = styled.div`
     display: block;
