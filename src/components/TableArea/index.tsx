@@ -15,6 +15,6 @@ export const TableArea = ({ list }: Props) => {
                 ))}
             </tbody>
         </C.Table>
-
+    
     );
 }

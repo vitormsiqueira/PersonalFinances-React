@@ -77,11 +77,14 @@ const App = () => {
 
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />
+        <C.FooterContainer><h3>® Developed by <a href="https://github.com/vitormsiqueira">Vitor Siqueira</a> </h3></C.FooterContainer>
+
       </C.Body>
       
+
+
       {/* Área de informações*/}
       <InfoArea income={income} expense={expense} />
-
     </C.Container >
   );
 }

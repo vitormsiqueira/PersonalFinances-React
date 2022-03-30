@@ -25,7 +25,7 @@ export const TableItem = ({ item }: Props) => {
                     
                     <C.IconStyleWrapper>
                         <C.Category color={categories[item.category].backgoundcolor} >
-                            <Icone color={categories[item.category].color} />
+                            <Icone color={categories[item.category].color} size={20} />
                         </C.Category>
                     </C.IconStyleWrapper> 
                     

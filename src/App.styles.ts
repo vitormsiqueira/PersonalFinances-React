@@ -30,8 +30,21 @@ export const HeaderText = styled.h1`
 export const Body = styled.div`
     margin: auto;
     max-width: 980px;
-    margin-bottom: 50px;
+    margin-bottom: 85px;
     padding: 20px;
 `;
 
+export const FooterContainer = styled.div`
+    color: rgb(0, 0, 0, .2);
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+
+    h3{
+        font-weight:400;
+    }
+    a{
+        color: rgb(0, 0, 0, .2);
+    }
+`;
 
