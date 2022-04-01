@@ -9,7 +9,8 @@ import { getCurrentMonth, filterListByMonth } from './helpers/dateFilters'
 import { TableArea } from './components/TableArea'
 import { InfoArea } from './components/InfoArea/index';
 import { InputArea } from './components/InputArea';
-import { CalendarFilter } from './components/CalendarArea/index'
+import { CalendarFilter } from './components/CalendarArea/index';
+import { PopUpForm } from './components/PopupForm/index';
 
 import Logo from './assets/images/logo.svg';
 import Avatar from './assets/images/profile.png';
@@ -59,6 +60,12 @@ const App = () => {
 
   }, [filteredList])
 
+  const [showPopup, setShow] = useState(false); 
+
+  const handleClickPopup = (newShow: boolean) => {
+    setShow(newShow)
+  }
+
   return (
     <C.Container>
 
@@ -68,12 +75,16 @@ const App = () => {
       </C.Header>
       <C.Body>
 
-        {/* Área de filtros */}
-        <CalendarFilter currentMonth={currentMonth} onMonthChange={handleMonthChange} />
+        <C.Controller>
+          {/* Área de filtros */}
+          <CalendarFilter currentMonth={currentMonth} onMonthChange={handleMonthChange} />
 
-        {/* Área de inserções*/}
-        {/* <InputArea onAdd={handleAddItem} /> */}
+          {/* Área de inserções*/}
+          <button onClick={() => handleClickPopup(true)}>+ Novo item</button>
+          {/* <InputArea  onAdd={handleAddItem} /> */}
+        </C.Controller>   
 
+        <PopUpForm show={showPopup} setShow={handleClickPopup}/>
 
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />

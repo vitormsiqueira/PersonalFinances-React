@@ -2,9 +2,25 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-    background-color: #fff;
-    box-shadow: 0px 0px 30px 10px rgb(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
+    display: flex;
+
+    button{
+        border: solid 3px #e3e5ed;
+        color: #797c8e;
+        font-weight: 500;
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+
+    button:hover{
+        background-color: #00d632;
+        color: #fff;
+        font-weight: 500;
+        border: solid 3px #00d632;
+        cursor: pointer;
+    }
 `; 
+

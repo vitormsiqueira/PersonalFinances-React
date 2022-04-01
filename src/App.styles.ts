@@ -48,3 +48,27 @@ export const FooterContainer = styled.div`
     }
 `;
 
+export const Controller = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        border: solid 3px #e3e5ed;
+        color: #797c8e;
+        font-weight: 500;
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+
+    button:hover{
+        background-color: #00d632;
+        color: #fff;
+        font-weight: 500;
+        border: solid 3px #00d632;
+        cursor: pointer;
+    }
+`;
+

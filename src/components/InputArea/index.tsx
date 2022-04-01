@@ -18,7 +18,7 @@ export const InputArea = ({ onAdd }: Props) => {
 
     return (
         <C.Container>
-            <button onClick={handleAddEvent}>Adicionar</button>
+            <button onClick={handleAddEvent}>+ Novo item</button>
         </C.Container>
     );
 }
