@@ -59,7 +59,7 @@ const App = () => {
 
   }, [filteredList])
 
-  const [showPopup, setShow] = useState(false); 
+  const [showPopup, setShow] = useState(false);
 
   const handleClickPopup = (newShow: boolean) => {
     setShow(newShow)
@@ -81,16 +81,16 @@ const App = () => {
           {/* Área de inserções*/}
           <button onClick={() => handleClickPopup(true)}>+ Novo item</button>
           {/* <InputArea  onAdd={handleAddItem} /> */}
-        </C.Controller>   
+        </C.Controller>
 
-        <PopUpForm show={showPopup} setShow={handleClickPopup} categories={categories}/>
+        <PopUpForm show={showPopup} setShow={handleClickPopup} categories={categories} />
 
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />
         <C.FooterContainer><h3>® Developed by <a href="https://github.com/vitormsiqueira">Vitor Siqueira</a> </h3></C.FooterContainer>
 
       </C.Body>
-      
+
 
 
       {/* Área de informações*/}

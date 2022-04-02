@@ -1,7 +1,7 @@
 import React from 'react'
 import * as C from './styles'
 import DeleteIcon from '../../assets/images/delete.png';
-import {Coffee, Home, CreditCard, ShoppingBag, Gift, DollarSign} from 'styled-icons/feather'
+import { Coffee, Home, CreditCard, ShoppingBag, Gift, DollarSign } from 'styled-icons/feather'
 import { categories } from '../../data/categories';
 import { Category } from '../../types/Category'
 import { icons } from 'react-icons/lib';
@@ -14,7 +14,7 @@ type Props = {
 }
 
 
-export const PopUpForm = ({show, setShow, categories}: Props) => {
+export const PopUpForm = ({ show, setShow, categories }: Props) => {
     const Objeto = Object.values(categories);
 
     let Icon_1 = Objeto[0].icon as unknown as keyof JSX.IntrinsicElements;
@@ -31,53 +31,53 @@ export const PopUpForm = ({show, setShow, categories}: Props) => {
                     <h3>Adicione um item </h3>
 
                     <button className="close-btn" onClick={() => setShow(false)}>
-                        <img src={DeleteIcon}/>
+                        <img src={DeleteIcon} />
                     </button>
                 </C.Header>
                 <C.Content>
                     <C.ContainerInput>
-                        <input type="text" placeholder="Adicione um titulo"/>
-                        <input type="double" placeholder="Valor"/>
-                    </C.ContainerInput>    
-                        
+                        <input type="text" placeholder="Adicione um titulo" />
+                        <input type="double" placeholder="Valor" />
+                    </C.ContainerInput>
+
                     <C.ContainerInput>
                         <C.IconStyleWrapper color={Objeto[0].color} backcolor={Objeto[0].backgoundcolor}>
                             <label>
-                                <input type="radio" value="Male" name="gender"/>
-                                <Icon_1 className='icon'/>
+                                <input type="radio" value="Male" name="gender" />
+                                <Icon_1 className='icon' />
                             </label>
 
                             <label>
                                 <input type="radio" value="Female" name="gender" />
-                                <Icon_2 className='icon'/>
+                                <Icon_2 className='icon' />
                             </label>
 
                             <label>
                                 <input type="radio" value="Other" name="gender" />
-                                <Icon_3 className='icon'/>
+                                <Icon_3 className='icon' />
                             </label>
 
                             <label>
                                 <input type="radio" value="Other" name="gender" />
-                                <Icon_4 className='icon'/>
+                                <Icon_4 className='icon' />
                             </label>
 
                             <label>
                                 <input type="radio" value="Other" name="gender" />
-                                <Icon_5 className='icon'/>
+                                <Icon_5 className='icon' />
                             </label>
 
                             <label>
                                 <input type="radio" value="Other" name="gender" />
-                                <Icon_6 className='icon'/>
+                                <Icon_6 className='icon' />
                             </label>
-                        </C.IconStyleWrapper> 
+                        </C.IconStyleWrapper>
                         <input id="date" type="date"></input>
-                    </C.ContainerInput>                            
+                    </C.ContainerInput>
                     <button type="submit">Salvar</button>
                 </C.Content>
-            </C.CardContainer>        
+            </C.CardContainer>
         </C.Container>
-    ) : (<div/>)
+    ) : (<div />)
 }
 

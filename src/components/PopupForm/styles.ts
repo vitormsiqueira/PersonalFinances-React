@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {StyledIconBase} from '@styled-icons/styled-icon'
+import { StyledIconBase } from '@styled-icons/styled-icon'
 
 export const Container = styled.div`
     display: flex;
@@ -9,9 +9,7 @@ export const Container = styled.div`
     height: 100vh;
     position: fixed;
     justify-content: center;
-    align-itens: center;
     background-color: rgba(0, 0, 0, 0.2);
-
 `;
 
 export const CardContainer = styled.div`
@@ -26,7 +24,6 @@ export const CardContainer = styled.div`
     background-color: #ffff;
     align-self: center;
     border-radius: 14px;
-    
 `;
 
 
@@ -129,13 +126,15 @@ export const Content = styled.div`
     
 
     button{
+        margin-top: 30px;
         height: 40px;
         width: 50%;
         background-color: #00d632;
         border-radius: 18px;
         border: none;
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     button:hover{

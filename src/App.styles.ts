@@ -53,23 +53,21 @@ export const Controller = styled.div`
     justify-content: space-between;
 
     button{
-        border: solid 3px #e3e5ed;
-        color: #797c8e;
+        border: none;
+        color: #fff;
         font-weight: 500;
         font-size: 16px;
         width: 200px;
         text-align: center;
-        background-color: transparent;
+        background-color: #00d632;
         border-radius: 8px;
+        
     }
 
     button:hover{
-        background-color: #00d632;
-        color: #fff;
-        font-weight: 500;
-        border: solid 3px #00d632;
-        cursor: pointer;
+        background-color: #00C92F;
         box-shadow: 0 3px 15px #9bffb2;
+        cursor: pointer;
     }
 `;
 

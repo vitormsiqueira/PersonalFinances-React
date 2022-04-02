@@ -24,11 +24,8 @@ export const MonthArea = styled.div`
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    border: solid 3px #e3e5ed;
+    border: solid 3px #fff;
+    background-color: #fff;
+    box-shadow: 0 3px 15px #e3e5ed;
 
-    :hover{
-        background-color: #fff;
-        border: solid 3px #fff;
-        box-shadow: 0 3px 15px #e3e5ed;
-    }
 `;
