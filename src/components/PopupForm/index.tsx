@@ -28,7 +28,7 @@ export const PopUpForm = ({ show, setShow, categories }: Props) => {
         <C.Container>
             <C.CardContainer>
                 <C.Header>
-                    <h3>Adicione um item </h3>
+                    <h2>Adicione um item </h2>
 
                     <button className="close-btn" onClick={() => setShow(false)}>
                         <img src={DeleteIcon} />
@@ -36,43 +36,49 @@ export const PopUpForm = ({ show, setShow, categories }: Props) => {
                 </C.Header>
                 <C.Content>
                     <C.ContainerInput>
-                        <input type="text" placeholder="Adicione um titulo" />
-                        <input type="double" placeholder="Valor" />
+                        <label><h3>Título </h3><input type="text" placeholder="Adicione um titulo" /></label>
+
+                        <label><h3>Valor</h3><input type="double" placeholder="Digite um valor" /></label>
+
                     </C.ContainerInput>
 
                     <C.ContainerInput>
-                        <C.IconStyleWrapper color={Objeto[0].color} backcolor={Objeto[0].backgoundcolor}>
-                            <label>
-                                <input type="radio" value="Male" name="gender" />
-                                <Icon_1 className='icon' />
-                            </label>
+                        <label><h3>Categoria</h3>
+                            <C.IconStyleWrapper color={Objeto[0].color} backcolor={Objeto[0].backgoundcolor}>
+                                <label>
+                                    <input type="radio" value="Male" name="gender" />
+                                    <Icon_1 className='icon' />
+                                </label>
 
-                            <label>
-                                <input type="radio" value="Female" name="gender" />
-                                <Icon_2 className='icon' />
-                            </label>
+                                <label>
+                                    <input type="radio" value="Female" name="gender" />
+                                    <Icon_2 className='icon' />
+                                </label>
 
-                            <label>
-                                <input type="radio" value="Other" name="gender" />
-                                <Icon_3 className='icon' />
-                            </label>
+                                <label>
+                                    <input type="radio" value="Other" name="gender" />
+                                    <Icon_3 className='icon' />
+                                </label>
 
-                            <label>
-                                <input type="radio" value="Other" name="gender" />
-                                <Icon_4 className='icon' />
-                            </label>
+                                <label>
+                                    <input type="radio" value="Other" name="gender" />
+                                    <Icon_4 className='icon' />
+                                </label>
 
-                            <label>
-                                <input type="radio" value="Other" name="gender" />
-                                <Icon_5 className='icon' />
-                            </label>
+                                <label>
+                                    <input type="radio" value="Other" name="gender" />
+                                    <Icon_5 className='icon' />
+                                </label>
 
-                            <label>
-                                <input type="radio" value="Other" name="gender" />
-                                <Icon_6 className='icon' />
-                            </label>
-                        </C.IconStyleWrapper>
-                        <input id="date" type="date"></input>
+                                <label>
+                                    <input type="radio" value="Other" name="gender" />
+                                    <Icon_6 className='icon' />
+                                </label>
+                            </C.IconStyleWrapper>
+                        </label>
+
+                        <label><h3>Data</h3><input id="date" type="date"></input></label>
+
                     </C.ContainerInput>
                     <button type="submit">Salvar</button>
                 </C.Content>

@@ -91,8 +91,6 @@ const App = () => {
 
       </C.Body>
 
-
-
       {/* Área de informações*/}
       <InfoArea income={income} expense={expense} />
     </C.Container >

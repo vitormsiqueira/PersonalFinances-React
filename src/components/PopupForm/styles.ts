@@ -15,12 +15,11 @@ export const Container = styled.div`
 export const CardContainer = styled.div`
     position: relative;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 
     width: 100%;
-    max-width: 920px;
-    max-height: 420px;
+    max-width: 940px;
     background-color: #ffff;
     align-self: center;
     border-radius: 14px;
@@ -31,9 +30,11 @@ export const Header = styled.div`
     
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 
-    h3{
+    h2{
         align-self:center;
+        
     }
 
     button{
@@ -61,11 +62,11 @@ export const IconStyleWrapper = styled.div<{ color: string, backcolor: string }>
         padding: 10px;
     }
 
-    width: 48%;
+    text-align: center;
 
     input[type="radio"] {
         position: absolute;
-        opacity: 0;
+        display: none;
     }
 
     [type=radio]+ .icon {
@@ -82,6 +83,11 @@ export const IconStyleWrapper = styled.div<{ color: string, backcolor: string }>
         border: solid 3px ${props => props.backcolor};
     }
 
+    .icon:hover {
+        border: solid 3px ${props => props.color};
+        opacity: 0.6;
+    }
+
     input[type="radio"]:checked  + .icon {
         border: solid 3px ${props => props.color};
     }
@@ -91,25 +97,43 @@ export const IconStyleWrapper = styled.div<{ color: string, backcolor: string }>
 
 export const ContainerInput = styled.div`
     display: flex;
-    min-width: 200px;
     justify-content: space-between;
     padding: 20px;
 
+    flex-wrap: wrap;
+    
+    > label{
+        flex: 1;
+        text-align: left;
+        min-width: 300px;
+        padding: 10px;
+
+        h3{
+            padding: 5px 0;
+            margin: 0;
+        }
+    }
+    
+
+    label > input{
+        display: flex;
+        width: 98%;
+    }
+
     input{
         height: 35px;
-        width: 48%;
         min-width: 100px;
         border-radius: 5px;
         border: solid 2px #c4c4c4;
     }
 
     input:focus{
-        border: solid 3px #00d632;
+        border: solid 2px #00d632;
         outline: none;
     }
 
     input[type="date"]:focus{
-        border: solid 3px #00d632;
+        border: solid 2px #00d632;
         outline: none;
     }
 `;

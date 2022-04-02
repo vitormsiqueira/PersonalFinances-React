@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FiGift, FiDollarSign } from 'react-icons/fi';
-import {StyledIcon} from 'styled-icons/types';
-import {StyledIconBase} from '@styled-icons/styled-icon'
+import { StyledIcon } from 'styled-icons/types';
+import { StyledIconBase } from '@styled-icons/styled-icon'
 
 export const IconStyleWrapper = styled.div`
   ${StyledIconBase} {
@@ -37,7 +37,7 @@ export const Category = styled.div<{ color: string }>`
     margin: 5px;
 `;
 
-export const Icon = styled.div<{ color: string , icon: StyledIcon}>`
+export const Icon = styled.div<{ color: string, icon: StyledIcon }>`
     content: StyledIcon;
 `;
 
@@ -45,7 +45,7 @@ export const Bills = styled.div`
     display: block;
     flex: 1;
     padding-left: 10px;
-    align-self: center;s
+    align-self: center;
 `;
 
 export const BillTitle = styled.tr`

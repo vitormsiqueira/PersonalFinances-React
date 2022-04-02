@@ -16,13 +16,13 @@ export const TableItem = ({ item }: Props) => {
         <C.Container>
             <C.TableLine>
                 <C.TableColumn>
-                    
+
                     <C.IconStyleWrapper>
                         <C.Category color={categories[item.category].backgoundcolor} >
                             <Icone color={categories[item.category].color} size={20} />
                         </C.Category>
-                    </C.IconStyleWrapper> 
-                    
+                    </C.IconStyleWrapper>
+
                 </C.TableColumn>
 
                 <C.Bills>
