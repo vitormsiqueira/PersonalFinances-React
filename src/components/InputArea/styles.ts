@@ -21,6 +21,7 @@ export const Container = styled.div`
         font-weight: 500;
         border: solid 3px #00d632;
         cursor: pointer;
+        box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
     }
 `; 
 

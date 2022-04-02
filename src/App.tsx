@@ -13,7 +13,6 @@ import { CalendarFilter } from './components/CalendarArea/index';
 import { PopUpForm } from './components/PopupForm/index';
 
 import Logo from './assets/images/logo.svg';
-import Avatar from './assets/images/profile.png';
 
 const App = () => {
   // Lista geral
@@ -84,7 +83,7 @@ const App = () => {
           {/* <InputArea  onAdd={handleAddItem} /> */}
         </C.Controller>   
 
-        <PopUpForm show={showPopup} setShow={handleClickPopup}/>
+        <PopUpForm show={showPopup} setShow={handleClickPopup} categories={categories}/>
 
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {StyledIconBase} from '@styled-icons/styled-icon'
 
 export const Container = styled.div`
     display: flex;
@@ -19,7 +20,7 @@ export const CardContainer = styled.div`
     margin: 10px;
 
     width: 100%;
-    max-width: 640px;
+    max-width: 900px;
     max-height: 320px;
     background-color: #ffff;
     align-self: center;
@@ -54,6 +55,70 @@ export const Header = styled.div`
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.2)
     }
+`;
+
+export const IconStyleWrapper = styled.div<{ color: string, backcolor: string }>`
+    ${StyledIconBase} {
+        stroke-width: 2;
+        padding: 10px;
+    }
+
+    width: 48%;
+
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    [type=radio]+ .icon {
+        cursor: pointer;
+        margin-right: 0.5rem;
+    }
+
+    .icon {
+        margin: 10px;
+        width: 25px;
+        color: ${props => props.color};
+        background-color: ${props => props.backcolor};
+        border-radius: 12px;
+        border: solid 3px ${props => props.backcolor};
+    }
+
+    input[type="radio"]:checked  + .icon {
+        border: solid 3px ${props => props.color};
+    }
+    
+
+`
+
+export const ContainerInput = styled.div`
+    display: flex;
+    min-width: 200px;
+    justify-content: space-between;
+    padding: 20px;
+
+    input{
+        height: 35px;
+        width: 48%;
+        min-width: 100px;
+        border-radius: 5px;
+        border: solid 2px #c4c4c4;
+    }
+
+    input:focus{
+        border: solid 3px #00d632;
+        outline: none;
+    }
+
+    input[type="date"]:focus{
+        border: solid 3px #00d632;
+        outline: none;
+    }
+`;
+
+
+export const Icons = styled.div`
+    
 `;
 
 

@@ -9,15 +9,12 @@ export const IconStyleWrapper = styled.div`
   }
 `
 
-
-
 export const Container = styled.div`
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
     border-radius: 12px;
     background-color: #fff;
     padding: 10px;
     margin: 20px 0px;
-    // flex: 1;
 `;
 
 export const TableLine = styled.tr`

@@ -1,14 +1,8 @@
 import * as C from './styles';
-import React, {Fragment} from 'react'
 
 import { Item } from '../../types/Item';
 import { formateDate } from '../../helpers/dateFilters';
 import { categories } from '../../data/categories';
-import { FiGift, FiDollarSign } from 'react-icons/fi';
-
-import {StyledIcon} from 'styled-icons/types';
-import {Coffee, Home, CreditCard, ShoppingBag, Gift, DollarSign} from '@styled-icons/feather'
-import {AccountCircle, Lock} from '@styled-icons/material'
 
 
 type Props = {
