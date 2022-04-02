@@ -60,7 +60,7 @@ export const Controller = styled.div`
         width: 200px;
         text-align: center;
         background-color: transparent;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     button:hover{
@@ -69,6 +69,7 @@ export const Controller = styled.div`
         font-weight: 500;
         border: solid 3px #00d632;
         cursor: pointer;
+        box-shadow: 0 3px 15px #9bffb2;
     }
 `;
 

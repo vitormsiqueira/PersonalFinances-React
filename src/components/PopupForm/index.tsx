@@ -74,7 +74,7 @@ export const PopUpForm = ({show, setShow, categories}: Props) => {
                         </C.IconStyleWrapper> 
                         <input id="date" type="date"></input>
                     </C.ContainerInput>                            
-                    
+                    <button type="submit">Salvar</button>
                 </C.Content>
             </C.CardContainer>        
         </C.Container>

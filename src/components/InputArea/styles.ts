@@ -12,7 +12,7 @@ export const Container = styled.div`
         width: 200px;
         text-align: center;
         background-color: transparent;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     button:hover{

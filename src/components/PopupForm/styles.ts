@@ -18,10 +18,11 @@ export const CardContainer = styled.div`
     position: relative;
     padding: 20px;
     margin: 10px;
+    text-align: center;
 
     width: 100%;
-    max-width: 900px;
-    max-height: 320px;
+    max-width: 920px;
+    max-height: 420px;
     background-color: #ffff;
     align-self: center;
     border-radius: 14px;
@@ -122,4 +123,25 @@ export const Icons = styled.div`
 `;
 
 
-export const Content = styled.div``;
+export const Content = styled.div`
+
+    display: inline;
+    
+
+    button{
+        height: 40px;
+        width: 50%;
+        background-color: #00d632;
+        border-radius: 18px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    button:hover{
+        background-color: #00c92f;
+        cursor: pointer;
+        box-shadow: 0 3px 15px #9bffb2;
+    }
+
+`;
