@@ -83,8 +83,6 @@ const App = () => {
           {/* <InputArea  onAdd={handleAddItem} /> */}
         </C.Controller>
 
-        <PopUpForm show={showPopup} setShow={handleClickPopup} categories={categories} />
-
         {/* Área de tabela de itens*/}
         <TableArea list={filteredList} />
         <C.FooterContainer><h3>® Developed by <a href="https://github.com/vitormsiqueira">Vitor Siqueira</a> </h3></C.FooterContainer>
@@ -93,6 +91,7 @@ const App = () => {
 
       {/* Área de informações*/}
       <InfoArea income={income} expense={expense} />
+      <PopUpForm show={showPopup} setShow={handleClickPopup} categories={categories} onAdd={handleAddItem} />
     </C.Container >
   );
 }

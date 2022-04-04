@@ -27,7 +27,12 @@ export const formateDate = (date: Date): string => {
     let month = date.getMonth() + 1;
     let day = date.getDate();
 
-    return `${addZeroToDate(day)}/${addZeroToDate(month-1)}/${year}`
+    return `${addZeroToDate(day)}/${addZeroToDate(month - 1)}/${year}`
+}
+
+export const formateStringToDate = (date: string): Date => {
+    let [year, month, day] = date.split('-');
+    return new Date(parseInt(year), parseInt(month), parseInt(day));
 }
 
 const addZeroToDate = (n: number): string => {
