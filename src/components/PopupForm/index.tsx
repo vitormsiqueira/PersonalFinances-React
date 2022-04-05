@@ -10,15 +10,6 @@ import { Item } from '../../types/Item';
 import { useState, useReducer } from "react";
 import { items } from '../../data/items';
 import { Formik, useFormik } from 'formik';
-
-import {
-    Radio,
-    RadioGroup,
-    FormControlLabel,
-    FormControl,
-    FormLabel
-} from '@material-ui/core'
-import { Today } from 'styled-icons/material-twotone';
 import { formateStringToDate } from '../../helpers/dateFilters';
 
 type Props = {
@@ -27,8 +18,6 @@ type Props = {
     categories: Category,
     onAdd: (item: Item) => void;
 }
-
-
 
 
 export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
@@ -43,14 +32,18 @@ export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
 
     const formik = useFormik({
         initialValues: { date: '', category: '', title: '', value: 0.0 },
-        onSubmit: values => {
-            const newDate = formateStringToDate(values.date);
+        onSubmit: addItens => {
+            const newDate = formateStringToDate(addItens.date);
             let newItem: Item = {
                 date: newDate,
-                category: values.category,
-                title: values.title,
-                value: values.value,
+                category: addItens.category,
+                title: addItens.title,
+                value: parseFloat(addItens.value.toString()),
             }
+
+
+            alert(JSON.stringify(newItem, null, 2));
+
             onAdd(newItem);
         },
     });

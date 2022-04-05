@@ -80,7 +80,6 @@ const App = () => {
 
           {/* Área de inserções*/}
           <button onClick={() => handleClickPopup(true)}>+ Novo item</button>
-          {/* <InputArea  onAdd={handleAddItem} /> */}
         </C.Controller>
 
         {/* Área de tabela de itens*/}

@@ -1,7 +1,7 @@
 import * as C from './styles';
 
 import { Item } from '../../types/Item';
-import { formateDate } from '../../helpers/dateFilters';
+import { formateDateToString } from '../../helpers/dateFilters';
 import { categories } from '../../data/categories';
 
 
@@ -27,7 +27,7 @@ export const TableItem = ({ item }: Props) => {
 
                 <C.Bills>
                     <C.BillTitle>{item.title}</C.BillTitle>
-                    <C.BillDate>{formateDate(item.date)}</C.BillDate>
+                    <C.BillDate>{formateDateToString(item.date)}</C.BillDate>
                 </C.Bills>
 
                 <C.TableColumn>
