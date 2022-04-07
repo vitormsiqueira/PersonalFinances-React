@@ -40,10 +40,6 @@ export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
                 title: addItens.title,
                 value: parseFloat(addItens.value.toString()),
             }
-
-
-            alert(JSON.stringify(newItem, null, 2));
-
             onAdd(newItem);
         },
     });
