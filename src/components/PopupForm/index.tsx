@@ -32,7 +32,7 @@ export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
 
     const formik = useFormik({
         initialValues: { date: '', category: '', title: '', value: 0.0 },
-        onSubmit: addItens => {
+        onSubmit: (addItens, {resetForm}) => {
             const newDate = formateStringToDate(addItens.date);
             let newItem: Item = {
                 date: newDate,
@@ -41,7 +41,10 @@ export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
                 value: parseFloat(addItens.value.toString()),
             }
             onAdd(newItem);
+            resetForm({});
         },
+        
+        
     });
 
     return show ? (
@@ -56,7 +59,7 @@ export const PopUpForm = ({ show, setShow, categories, onAdd }: Props) => {
                 </C.Header>
                 <C.Content>
 
-                    <form onSubmit={formik.handleSubmit}>
+                    <form onSubmit={formik.handleSubmit} onReset={formik.handleReset}>
                         <C.ContainerInput>
                             <label>
                                 <h3>Título</h3>
